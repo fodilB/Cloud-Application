@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Generating docker image automatically</title>
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    
+    <body>
+	   <div>
+    		<div class="inline-block">
+				<img src="assets/img/logo2.png" style="float: right;margin:0px 100px" ALT="Versailles university logo" height=150 width=12% >
+       			<img src="assets/img/logo.png" ALT="Paris Saclay University logo" style="float: left;margin:0px 100px" width=30% height=100%>
+     		 </div>
+	 </div>
+	
+        <div>
+           <img src="assets/img/text.png"  style="padding-top:20px; padding-bottom:20px;" class="center" ALT="text" width=80% height=100%>
+	    <img src="assets/img/docker.png"  class="center" style=" padding-bottom:5px;"  ALT="text" width=20% height=150>
+          
+        </div>
+        
+        <form method="post" action="CloudGenerator">
+            
+		
+		<div class="select-style" >
+		
+		  <select name="imageName" id="server_image">
+				<option value="fodilbenali/apache">Choose Docker Image</option>
+				<option value="postgres">postgres</option>
+		  </select>
+		</div>
+            <br>
+            <br>
+
+		<div >
+			<input type="text" name="sqlFileUrl" placeholder="SQL File Url"/>
+		</div>
+           
+            <br>
+            <br>
+            <input type="submit" class="blueButton" value="Creer Image">
+        </form>
+                
+       <footer>
+  <p>Created by: Fodil BENALI</p>
+  <p>Contact information: <a href="mailto:df_benali@esi.dz">
+  Fodil@Benali.dz</a></p>
+</footer>
+	
+            
+    </body>
+</html>
